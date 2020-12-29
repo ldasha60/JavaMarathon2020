@@ -2,9 +2,11 @@ package day4;
 
 public class Task2 {
     public static void main(String[] args) {
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
         int[] array = new int[100];
-        int max = 0;
-        int min = 10000;
+
         int count = 0;
         int sum = 0;
         for (int i = 0; i < array.length; i++) {

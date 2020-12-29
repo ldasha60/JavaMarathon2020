@@ -6,6 +6,8 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        String country = null;
+
         while (true) {
             String s = scanner.nextLine();
             if (s.equals("Stop")) {
@@ -15,28 +17,29 @@ public class Task1 {
                 case "Москва":
                 case "Владивосток":
                 case "Ростов":
-                    System.out.println("Россия");
+                    country = "Россия";
                     break;
                 case "Рим":
                 case "Милан":
                 case "Турин":
-                    System.out.println("Италия");
+                    country = "Италия";
                     break;
                 case "Ливерпуль":
                 case "Манчестер":
                 case "Лондон":
-                    System.out.println("Англия");
+                    country = "Англия";
                     break;
                 case "Берлин":
                 case "Мюнхен":
                 case "Кёльн":
-                    System.out.println("Германия");
+                    country = "Германия";
                     break;
                 default:
-                    System.out.println("Неизвестная страна");
+                    country = "Неизвестная страна";
                     break;
 
             }
+            System.out.println(country);
         }
 
     }

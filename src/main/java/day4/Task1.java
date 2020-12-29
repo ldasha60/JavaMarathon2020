@@ -31,8 +31,7 @@ public class Task1 {
             }
             if (j % 2 == 0) {
                 even++;
-            }
-            if (j % 2 != 0) {
+            } else {
                 odd++;
             }
         }
