@@ -5,7 +5,6 @@ public class Player {
     private final static int MAX_STAMINA = 100;
     private final static int MIN_STAMINA = 0;
     private static int countPlayers = 0;
-    private int freePlace = 0;
 
     public Player(int stamina) {
         this.stamina = stamina;
@@ -37,7 +36,7 @@ public class Player {
 
     public void info() {
         if (countPlayers < 6) {
-            freePlace = 6 - countPlayers;
+            int freePlace = 6 - countPlayers;
             System.out.println("Команды неполные. На поле еще есть " + freePlace + " свободных мест");
         }
         else {
