@@ -3,7 +3,6 @@ package day13;
 import java.util.Date;
 
 public class Message {
-
     private User sender;
     private User receiver;
     private String text;
