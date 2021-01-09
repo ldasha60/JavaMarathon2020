@@ -40,4 +40,3 @@ public class Message {
                 "\n" + text;
     }
 }
-
