@@ -1,7 +1,6 @@
 package day12;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Task2 {
     public static void main(String[] args) {

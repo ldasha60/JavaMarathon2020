@@ -35,14 +35,12 @@ public class MusicBand {
 
 
     public static void transferMembers(MusicBand a, MusicBand b) {
-        for (String member : a.getMembers()) {
-            b.getMembers().add(member);
-        }
+        b.getMembers().addAll(a.getMembers());
         a.getMembers().clear();
     }
 
     public void printMembers() {
-        System.out.println(this.members);
+        System.out.println(members);
     }
 
     @Override
